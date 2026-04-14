@@ -1,0 +1,205 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demon slayer | vaibhav sapat</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&display=swap" rel="stylesheet">
+  <style>
+    body { background-color: #f0f9ff; font-family: 'Nunito', sans-serif; }
+    .navbar { background-color: #00a1e9 !important; border-bottom: 4px solid #ed1c24; }
+    .carousel-item img { height: 480px; width: 100%; object-fit: contain; }
+    .card { border: 3px solid #00a1e9; border-radius: 15px; overflow: hidden; transition: 0.3s; position: relative; }
+    .card:hover { transform: translateY(-10px); box-shadow: 0 12px 28px rgba(0,161,233,0.3); }
+    .card-img-top { height: 220px; object-fit: contain; padding: 10px; }
+    .btn-custom { background-color: #00a1e9; color: white; border-radius: 20px; font-weight: bold; border: none; }
+    .btn-custom:hover { background-color: #ed1c24; color: white; }
+    footer { background-color: #212529; border-top: 5px solid #fff000; }
+    .section-title { font-weight: 900; color: #00a1e9; }
+    .character-badge {
+      position: absolute; top: 10px; left: 10px;
+      background: #00a1e9; color: white;
+      font-size: 11px; font-weight: 700;
+      border-radius: 20px; padding: 2px 10px; z-index: 2;
+    }
+    .slide-bg-1 { background: linear-gradient(135deg, #b3e5fc, #81d4fa); }
+    .slide-bg-2 { background: linear-gradient(135deg, #fff9c4, #ffecb3); }
+    .slide-bg-3 { background: linear-gradient(135deg, #fce4ec, #f8bbd0); }
+    .slide-bg-4 { background: linear-gradient(135deg, #ede7f6, #d1c4e9); }
+  </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold fs-3" href="#">Vaibhav sapat</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="https://www.imdb.com/title/tt9335498/">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="https://www.imdb.com/title/tt9335498/">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="https://www.imdb.com/title/tt9335498/">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#https://www.imdb.com/title/tt9335498/">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- CAROUSEL — 4 slides, each a different character -->
+<div id="mainCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2"></button>
+    <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="3"></button>
+  </div>
+  <div class="carousel-inner">
+
+    <!-- Slide 1: Doraemon -->
+      <div class="carousel-item active">
+                <img src="https://static0.gamerantimages.com/wordpress/wp-content/uploads/2022/02/15-Iconic-Shonen-Anime-Protagonists-Ranked-By-Their-Intelligence-Tanjiro-Kamado.jpg?w=1600&h=900&fit=crop"
+                     class="d-block w-100"
+                     alt="Doraemon"
+                     style="object-fit:contain; height:500px; background:linear-gradient(135deg,#00c6ff,#87e0ff);">
+                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
+                    <h2>Welcome to Demon slayer World!</h2>
+                    <p>exploring the nature and fighting against the demons in edo period.</p>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEoAu3XV3FA93uCniUZtdQ4m61E4XIEgNYeg&s"
+                     class="d-block w-100"
+                     alt="Doraemon Anime Scene"
+                     style="object-fit:cover; height:500px;">
+                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
+                    <h2>Tanjiro &amp; Friends</h2>
+                    <p>Fighting against demons through teamwork and friendship.</p>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRe_CMXqUESs6hbsyoXz5Tdfn6Aqhc-a9XCFA&s"
+                     class="d-block w-100"
+                     alt="Doraemon Logo"
+                     style="object-fit:contain; height:500px; background:linear-gradient(135deg,#fff176,#ffe082);">
+                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
+                    <h2>Practice Every Day</h2>
+                    <p>Learning, building, and growing — one form at a time.</p>
+                </div>
+            </div>
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+
+   
+
+<!-- CARDS SECTION -->
+<div class="container my-5">
+  <div class="text-center mb-5">
+    <h1 class="section-title">Meet the Gang &amp; Their forms</h1>
+    <p class="text-muted">Every character is unique — just like their adventures!</p>
+  </div>
+  <div class="row g-4">
+
+    
+    <!-- Card 1: Doraemon -->
+            <div class="col-md-4">
+                <div class="card shadow-sm h-100">
+                    <span class="character-badge">Tanjiro</span>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROumf01lj2x1Touavia-cOImprMP2jG1C_wQ&s"
+                         class="card-img-top"
+                         alt="Doraemon"
+                         style="background:#e3f2fd;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title fw-bold">Free to Go Anywhwer</h5>
+                        <p class="card-text"> Tanjiros hinokami kagura</p>
+                        <a href="#" class="btn btn-custom px-4">Sun-breathing </a>
+                    </div>
+                </div>
+            </div>
+
+
+    <!-- Card 2: Nobita -->
+    <div class="col-md-4">
+                <div class="card shadow-sm h-100">
+                    <span class="character-badge">Tanjiro&Nezuko</span>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZeMDa6WAzvOKM0YsmGBPENCnLRlv1jrg0gw&s"
+             class="card-img-top" alt="Nobita" style="background:#fff9c4;">
+        <div class="card-body text-center">
+          <h5 class="card-title fw-bold">Tanjiro&Nezuko</h5>
+          <p class="card-text">Even Nezuko can master it!</p>
+          <a href="#" class="btn btn-custom px-4">Take-Sword</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3: Gadgets -->
+            <div class="col-md-4">
+                <div class="card shadow-sm h-100">
+                    <span class="character-badge">Tanjiros katana</span>
+                    <img src="https://m.media-amazon.com/images/M/MV5BMzM5Y2M1ZmItNzZlNS00MjFkLWE1MTAtOTgzMjQyOThhZTYyXkEyXkFqcGc@._V1_.jpg"
+                         class="card-img-top"
+                         alt="Suneo Honekawa"
+                         style="background:#e8f5e9;"
+                         onerror="this.onerror=null;this.src='https://upload.wikimedia.org/wikipedia/en/b/bd/Doraemon_character.png';">
+                    <div class="card-body text-center">
+                        <h5 class="card-title fw-bold">Smart Guy</h5>
+                        <p class="card-text">Zenetsu loves talking to girls</p>
+                        <a href="#" class="btn btn-custom px-4">Lightning speed</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4: Full Group -->
+            <div class="col-md-4">
+                <div class="card shadow-sm h-100">
+                    <span class="character-badge">Full Gang</span>
+                    <img src="data:image/jpeg;base64,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
+                    "
+                         class="card-img-top"
+                         alt="Doraemon Anime Group"
+                         style="object-fit:cover; padding:0;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title fw-bold">Team achives</h5>
+                        <p class="card-text">Tanjiro, Nezuko, muichiro, Inosuke &amp; Zenitsu — best friends tackling every adventure together!</p>
+                        <a href="#" class="btn btn-custom px-4">Let's Goo</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="text-white pt-5 pb-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <h5 class="text-uppercase fw-bold text-info">Vaibhav sapat</h5>
+                    <p class="small text-secondary">Simple But skilled</p>
+                </div>
+                <div class="col-md-6 mb-4 text-md-end">
+                    <h5 class="text-uppercase fw-bold text-info">Contact Me</h5>
+                    <p class="small text-secondary mb-0">yavatmal,MH29</p>
+                    <p class="small text-secondary">vaibhav@email.com</p>
+                </div>
+            </div>
+            <div class="border-top border-secondary pt-3 mt-3 text-center">
+                <p class="small text-secondary">&copy; 2026 vaibhav. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
